@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Classic Mahjong Online - Free Tile Matching Puzzle Game | Pixel Nostalgia</title>
+    <meta name="description" content="Play Mahjong online for free, a classic tile-matching puzzle game that tests your strategy and patience. Enjoy this timeless Chinese game on any device.">
+    <meta name="keywords" content="Mahjong, online mahjong, free mahjong game, tile matching game, puzzle game, chinese mahjong">
+    <link rel="canonical" href="https://pixelnostalgia.online/mahjong">
+    
+    <!-- Favicon -->
+    <link rel="icon" href="favicon.ico" type="image/x-icon">
+    
+    <!-- Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        apple: {
+                            light: '#f5f5f7',
+                            gray: '#86868b',
+                            dark: '#1d1d1f',
+                            blue: '#0071e3',
+                            pink: '#f94d8f',
+                            purple: '#8d41ea',
+                            orange: '#ff9f0a'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    
+    <style type="text/tailwindcss">
+        @layer base {
+            body {
+                @apply bg-apple-light text-apple-dark font-sans antialiased;
+            }
+            h1 {
+                @apply text-4xl md:text-5xl font-bold mb-6 tracking-tight;
+            }
+            h2 {
+                @apply text-2xl md:text-3xl font-semibold mt-8 mb-4 tracking-tight;
+            }
+            p {
+                @apply mb-4 leading-relaxed;
+            }
+            .container {
+                @apply px-4 md:px-8 mx-auto max-w-screen-xl;
+            }
+            .game-container {
+                @apply w-full my-8 rounded-xl overflow-hidden shadow-xl bg-white;
+                aspect-ratio: 16 / 9;
+            }
+            .btn {
+                @apply inline-block px-6 py-3 rounded-full font-medium transition-all duration-300;
+            }
+            .btn-primary {
+                @apply bg-apple-blue text-white hover:bg-opacity-90;
+            }
+            .apple-gradient {
+                @apply bg-gradient-to-r from-apple-pink via-apple-purple to-apple-blue text-transparent bg-clip-text;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header class="py-6 bg-white shadow-sm sticky top-0 z-10">
+        <div class="container flex justify-between items-center">
+            <a href="/" class="flex items-center space-x-2">
+                <span class="text-xl font-bold apple-gradient">PixelNostalgia</span>
+            </a>
+            <nav class="hidden md:flex space-x-6">
+                <a href="/" class="text-apple-gray hover:text-apple-dark transition-colors">Home</a>
+                <a href="/games" class="text-apple-gray hover:text-apple-dark transition-colors">Games</a>
+                <a href="/about" class="text-apple-gray hover:text-apple-dark transition-colors">About</a>
+            </nav>
+            <button class="md:hidden text-apple-dark" aria-label="Menu">
+                <svg xmlns="http://www.w3.org/2000/svg" class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+                </svg>
+            </button>
+        </div>
+    </header>
+
+    <main class="container py-12">
+        <section class="text-center mb-12">
+            <h1 class="apple-gradient">Mahjong Online</h1>
+            <p class="text-xl text-apple-gray max-w-3xl mx-auto">
+                A timeless Chinese tile-matching puzzle game that tests your strategy, patience, and pattern recognition skills.
+            </p>
+        </section>
+
+        <section>
+            <div class="game-container">
+                <iframe src="https://www.onlinegames.io/mahjong/" frameborder="0" width="100%" height="100%" allowfullscreen></iframe>
+            </div>
+            
+            <div class="flex justify-center my-6">
+                <a href="#play-now" class="btn btn-primary">Play Fullscreen</a>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <h2>About Mahjong</h2>
+            <div class="grid md:grid-cols-2 gap-8">
+                <div>
+                    <p>
+                        Mahjong (麻将) is a classic tile-matching puzzle game that originated in China. The online version presented here is a variant known as Mahjong Solitaire, which has gained worldwide popularity for its engaging gameplay and beautiful tile designs.
+                    </p>
+                    <p>
+                        Unlike the traditional four-player game, Mahjong Solitaire is played by a single player who must match identical free tiles to remove them from the board. A tile is considered "free" when it is not covered by another tile and has at least one open side.
+                    </p>
+                    <p>
+                        The game blends strategy, pattern recognition, and a touch of luck, creating a soothing yet mentally stimulating experience that has captivated players for generations.
+                    </p>
+                </div>
+                <div>
+                    <h2>How to Play</h2>
+                    <p>
+                        <strong>Objective:</strong> Clear all tiles from the board by matching identical pairs.
+                    </p>
+                    <p>
+                        <strong>Rules:</strong>
+                    </p>
+                    <ul class="list-disc pl-5 mb-4 space-y-2">
+                        <li>You can only select "free" tiles that aren't covered and have at least one open side.</li>
+                        <li>Match identical tiles to remove them from the board.</li>
+                        <li>Plan your moves carefully - the order in which you remove tiles affects your ability to clear the board.</li>
+                        <li>Use hints or shuffle options if you get stuck.</li>
+                    </ul>
+                    <p>
+                        <strong>Controls:</strong> Simply click or tap on tiles to select them for matching.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <h2>The Rich History of Mahjong</h2>
+            <p>
+                Mahjong's history dates back centuries in China, with the name "麻将" translating to "sparrow" in Chinese, inspired by the sound of shuffling tiles that resembles birds chirping. The traditional game uses beautiful tiles made from materials like bone, bamboo, or resin.
+            </p>
+            <p>
+                The Mahjong Solitaire variant featured here was created as a computer puzzle game in the 1980s and was popularized globally by Microsoft. Despite being different from the traditional four-player game, both share the same beautiful tiles and require strategic thinking.
+            </p>
+            <p>
+                Each Mahjong tile carries deep cultural significance, representing elements of Chinese history, wealth, and philosophy. For example, the Bamboo suit symbolizes strings of ancient Chinese coins, while the Dragon tiles represent power, luck, and prosperity.
+            </p>
+        </section>
+
+        <section class="my-12">
+            <h2>Benefits of Playing Mahjong</h2>
+            <div class="grid md:grid-cols-3 gap-6">
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-blue">Cognitive Skills</h3>
+                    <p>
+                        Mahjong enhances memory, pattern recognition, and strategic thinking, helping maintain cognitive functions.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-pink">Stress Relief</h3>
+                    <p>
+                        The game's meditative quality helps reduce stress and provides a calming experience during hectic days.
+                    </p>
+                </div>
+                <div class="bg-white p-6 rounded-xl shadow-md">
+                    <h3 class="text-xl font-semibold mb-3 text-apple-purple">Cultural Connection</h3>
+                    <p>
+                        Playing Mahjong creates a connection to centuries of Chinese culture and tradition through its symbolic tiles.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <section class="my-12">
+            <h2>Frequently Asked Questions</h2>
+            <div class="space-y-6">
+                <div>
+                    <h3 class="text-xl font-semibold">Can Mahjong always be solved?</h3>
+                    <p>
+                        Not every Mahjong puzzle has a guaranteed solution. However, many online versions like this one are designed to be solvable with strategic play, especially when features like shuffle or undo are available.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Is Mahjong good for your brain?</h3>
+                    <p>
+                        Absolutely! Mahjong helps sharpen your mind by enhancing memory, pattern recognition, and strategic thinking. Regular play has been shown to help maintain cognitive functions and reduce stress.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Do I need to understand Chinese to play Mahjong?</h3>
+                    <p>
+                        Not at all. Mahjong tiles have symbols and numbers that anyone can easily learn, regardless of language. The online version is fully visual, making it universally playable.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-semibold">Is Mahjong based on luck or skill?</h3>
+                    <p>
+                        Mahjong blends skill and luck. Successful play requires careful planning, strategic moves, and thoughtful tile selection—but occasionally, luck also plays its part. That's what makes it both challenging and fun!
+                    </p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="bg-apple-dark text-white py-12">
+        <div class="container">
+            <div class="grid md:grid-cols-3 gap-8">
+                <div>
+                    <h3 class="text-xl font-bold mb-4">PixelNostalgia</h3>
+                    <p class="text-apple-gray">
+                        Bringing classic games to modern browsers with a touch of nostalgia.
+                    </p>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/" class="text-apple-gray hover:text-white transition-colors">Home</a></li>
+                        <li><a href="/games" class="text-apple-gray hover:text-white transition-colors">Games</a></li>
+                        <li><a href="/about" class="text-apple-gray hover:text-white transition-colors">About</a></li>
+                        <li><a href="/contact" class="text-apple-gray hover:text-white transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-xl font-bold mb-4">Legal</h3>
+                    <ul class="space-y-2">
+                        <li><a href="/privacy" class="text-apple-gray hover:text-white transition-colors">Privacy Policy</a></li>
+                        <li><a href="/terms" class="text-apple-gray hover:text-white transition-colors">Terms of Service</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-gray-800 mt-8 pt-8 text-center text-apple-gray">
+                <p>&copy; 2023 PixelNostalgia. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script>
+        // Simple mobile menu toggle
+        document.querySelector('button[aria-label="Menu"]').addEventListener('click', function() {
+            const nav = document.querySelector('nav');
+            nav.classList.toggle('hidden');
+            nav.classList.toggle('flex');
+            nav.classList.toggle('flex-col');
+            nav.classList.toggle('absolute');
+            nav.classList.toggle('top-16');
+            nav.classList.toggle('right-4');
+            nav.classList.toggle('bg-white');
+            nav.classList.toggle('p-4');
+            nav.classList.toggle('rounded-lg');
+            nav.classList.toggle('shadow-lg');
+        });
+    </script>
+</body>
+</html> 

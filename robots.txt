@@ -1,0 +1,5 @@
+User-agent: *
+Allow: /
+
+# 指定网站地图位置
+Sitemap: https://pixelnostalgia.online/sitemap.xml 
